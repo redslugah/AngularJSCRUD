@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="aplicacao">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="scripts/angular.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="App/Main.js"></script>
+    <script src="App/controllers/LojaController.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="Loja">
+        <h1 class="text-center">Banco de Lojas</h1>
+        <h2 class="text-danger">Lista de Lojas</h2>
+        <div class="row">
+            <div class="thumbnail">
+                <img class="img-responsive center-block" ng-src="{{loja.Url}}" alt="Loja" />
+                <div class="caption">
+                    <h2>{{loja.Nome}}</h2>
+                    <h2>{{loja.Categoria}}</h2>
+                    <h2>{{loja.Rua}} {{loja.Numero}}</h2>
+                    <a href="#" class="btn btn-primary" role="button">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+        <h2>{{loja.Categoria}}</h2>
+    </div>
+</body>
+</html>
