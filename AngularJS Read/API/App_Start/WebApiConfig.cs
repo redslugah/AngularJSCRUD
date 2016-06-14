@@ -11,7 +11,7 @@ namespace API
         public static void Register(HttpConfiguration config)
         {
 
-            var cors = new EnableCorsAttribute("http://localhost:65109", "*", "*");
+            var cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(cors);
             // Web API configuration and services
 
